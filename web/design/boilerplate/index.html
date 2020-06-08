@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.min.css" type="text/css"/>
+    <link id="theme-color" rel="stylesheet" href="theme-light.min.css" type="text/css"/>
+    <title> FlatApp </title>
+</head>
+<body>
+<flat-app page="one">
+    <flat-page id="one">
+        <header>
+            <img class="brand" src="brand.svg"/>
+            <span> FlatApp </span>
+        </header>
+        <nav>
+            <a href="#"
+               onclick="changeColorTheme('theme-light.min.css', 'theme-dark.min.css', 'theme-light-neu.min.css', 'theme-dark-neu.min.css')">
+                <img src="color-switch.svg" alt="color-switch"/>
+            </a>
+        </nav>
+        <aside>
+            <flat-nav label="Introduction & Identity Design" target="one"></flat-nav>
+        </aside>
+        <main>
+            <h1>Introduction</h1>
+            <span>This project is an example of creating a new brand called FlatApp by using some basic UI Design principles.</span>
+        </main>
+    </flat-page>
+</flat-app>
+<script src="flat-app.min.js"></script>
+<script src="script.min.js"></script>
+<script src="theme.min.js"></script>
+</body>
+</html>

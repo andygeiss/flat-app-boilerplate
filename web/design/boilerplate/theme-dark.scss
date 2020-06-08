@@ -1,0 +1,34 @@
+@import "flat-mixins";
+@import "theme-dark-colors";
+
+flat-page {
+  aside {
+    @include flat-color(darken($color-1, 5%));
+
+    flat-nav {
+      &:hover {
+        @include flat-color($color-2);
+      }
+    }
+  }
+
+  header {
+    @include flat-color(lighten($color-1, 2.5%));
+  }
+
+  main {
+    @include flat-color($color-1);
+  }
+
+  nav {
+    @include flat-color(lighten($color-1, 2.5%));
+
+    a, flat-nav {
+      @include flat-color(lighten($color-1, 2.5%));
+
+      &:hover {
+        @include flat-color(lighten($color-1, 5%));
+      }
+    }
+  }
+}

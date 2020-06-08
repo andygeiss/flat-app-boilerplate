@@ -1,0 +1,99 @@
+@import "flat-mixins";
+@import "flat-reset";
+
+/* required class for page navigation */
+.active {
+  display: grid !important;
+}
+
+/* defaults */
+body {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* custom components basic styling */
+flat-app {
+  height: 100%;
+}
+
+flat-nav {
+  cursor: pointer;
+  display: flex;
+}
+
+flat-page {
+  display: none;
+  height: 100%;
+}
+
+/* app specific styling ... */
+flat-page {
+  font-family: "Fira Sans Book", serif;
+  font-size: 10pt;
+  grid-template-areas: "header nav" "aside main";
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 3rem 1fr;
+
+  aside {
+    grid-area: aside;
+
+    flat-nav {
+      font-size: .8rem;
+      line-height: 3rem;
+      padding: 0 1rem;
+    }
+  }
+
+  header {
+    align-items: center;
+    cursor: default;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    grid-area: header;
+    padding: 1rem;
+
+    .brand {
+      height: 24px;
+      margin-right: .5rem;
+      width: 24px;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-flow: column;
+    font-size: .8rem;
+    line-height: 1rem;
+    grid-area: main;
+    padding: 1rem;
+
+    h1 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  }
+
+  nav {
+    font-size: .8rem;
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 3rem;
+
+    a, flat-nav {
+      align-items: center;
+      display: flex;
+      margin: 0 .5rem;
+      padding: 0 .5rem;
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}

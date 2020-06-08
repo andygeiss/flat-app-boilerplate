@@ -1,0 +1,43 @@
+@import "flat-mixins";
+@import "theme-dark-colors";
+
+flat-page {
+  @include flat-color($color-1);
+
+  aside {
+    @include flat-gradient(darken($color-1, 5%));
+
+    flat-nav {
+      @include flat-gradient($color-1);
+      @include flat-shadow($color-1);
+      margin: 16px;
+
+      &:hover {
+        @include flat-shadow-inset($color-1);
+      }
+    }
+  }
+
+  header {
+    @include flat-gradient(lighten($color-1, 2.5%));
+  }
+
+  main {
+    @include flat-gradient($color-1);
+  }
+
+  nav {
+    @include flat-gradient(lighten($color-1, 2.5%));
+
+    a, flat-nav {
+      @include flat-gradient($color-1);
+      @include flat-shadow($color-1);
+      margin-right: 8px;
+      margin-top: 8px;
+
+      &:hover {
+        @include flat-shadow-inset($color-1);
+      }
+    }
+  }
+}
