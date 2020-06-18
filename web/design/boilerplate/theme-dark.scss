@@ -18,12 +18,24 @@ flat-page {
 
   main {
     @include flat-color($color-1);
+
+    a, button, flat-nav {
+      @include flat-color($color-3);
+
+      &:hover {
+        @include flat-color($color-2);
+      }
+    }
+
+    select {
+      background: #fff !important;
+    }
   }
 
   nav {
     @include flat-color(lighten($color-1, 2.5%));
 
-    a, flat-nav {
+    a, button, flat-nav {
       @include flat-color(lighten($color-1, 2.5%));
 
       &:hover {

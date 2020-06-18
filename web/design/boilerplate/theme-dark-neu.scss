@@ -24,12 +24,36 @@ flat-page {
 
   main {
     @include flat-gradient($color-1);
+
+    form {
+      @include flat-gradient($color-1);
+      @include flat-shadow($color-1);
+      margin-top: 1rem;
+      padding: 1rem;
+
+      a, button, flat-nav {
+        @include flat-gradient($color-1);
+        @include flat-shadow($color-1);
+        color: #fff !important;
+
+        &:hover {
+          @include flat-shadow-inset($color-1);
+        }
+      }
+
+      input, select {
+        @include flat-gradient($color-1);
+        @include flat-shadow-inset($color-1);
+        color: #ffffff !important;
+        padding-left: 1rem;
+      }
+    }
   }
 
   nav {
     @include flat-gradient(lighten($color-1, 2.5%));
 
-    a, flat-nav {
+    a, button, flat-nav {
       @include flat-gradient($color-1);
       @include flat-shadow($color-1);
       margin-right: 8px;
