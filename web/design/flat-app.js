@@ -113,3 +113,5 @@ customElements.define('flat-page', class extends HTMLElement {
         }
     }
 });
+
+const flat = {};
