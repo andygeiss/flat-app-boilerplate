@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="utf-8">
-    <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
-    <meta content="no-cache" http-equiv="Pragma"/>
-    <meta content="0" http-equiv="Expires"/>
+    <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control" />
+    <meta content="no-cache" http-equiv="Pragma" />
+    <meta content="0" http-equiv="Expires" />
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles.min.css" type="text/css"/>
-    <link id="theme-color" rel="stylesheet" href="theme-light.min.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/styles/styles.min.css" type="text/css" />
+    <link id="theme-color" rel="stylesheet" href="assets/styles/theme-light.min.css" type="text/css" />
     <title> FlatApp </title>
 </head>
+
 <body>
-<flat-app page="one">
-    <flat-page id="one">
-        <header>
-            <img class="brand" src="brand.svg"/>
-            <span> FlatApp </span>
-        </header>
-        <nav>
-            <a href="#"
-               onclick="changeColorTheme('theme-light.min.css', 'theme-dark.min.css', 'theme-light-neu.min.css', 'theme-dark-neu.min.css')">
-                <img src="color-switch.svg" alt="color-switch"/>
-            </a>
-        </nav>
-        <aside>
-            <flat-nav label="Introduction & Identity Design" target="one"></flat-nav>
-        </aside>
-        <main>
-            <h1>Introduction</h1>
-            <span>This project is an example of creating a new brand called FlatApp by using some basic UI Design principles.</span>
-            <form action="#">
-                <label for="username">Username:</label>
-                <input id="username" type="text">
-                <label for="password">Password:</label>
-                <input id="password" type="password">
-                <label for="checklistName">Application:</label>
-                <select id="appName">
-                    <option value="---- Please select ----">---- Please select ----</option>
-                </select>
-                <div class="row">
-                    <button id="btnSignIn">Sign in</button>
-                </div>
-            </form>
-        </main>
-    </flat-page>
-</flat-app>
-<script src="flat-app.min.js"></script>
-<script src="script.min.js"></script>
-<script src="theme.min.js"></script>
+    <flat-app page="one">
+        <flat-page id="one">
+            <header>
+                <img class="brand" src="assets/images/brand.svg" />
+                <span> FlatApp </span>
+            </header>
+            <nav>
+                <a href="#"
+                    onclick="changeColorTheme('assets/styles/theme-light.min.css', 'assets/styles/theme-dark.min.css', 'assets/styles/theme-light-neu.min.css', 'assets/styles/theme-dark-neu.min.css')">
+                    <img src="assets/images/color-switch.svg" alt="color-switch" />
+                </a>
+            </nav>
+            <aside>
+                <flat-nav label="Introduction & Identity Design" target="one"></flat-nav>
+            </aside>
+            <main>
+                <h1>Introduction</h1>
+                <span>This project is an example of creating a new brand called FlatApp by using some basic UI Design
+                    principles.</span>
+                <form action="#">
+                    <label for="username">Username:</label>
+                    <input id="username" type="text">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password">
+                    <label for="checklistName">Application:</label>
+                    <select id="appName">
+                        <option value="---- Please select ----">---- Please select ----</option>
+                    </select>
+                    <div class="row">
+                        <button id="btnSignIn">Sign in</button>
+                    </div>
+                </form>
+            </main>
+        </flat-page>
+    </flat-app>
+    <script src="assets/scripts/flat-app.min.js"></script>
+    <script src="assets/scripts/script.min.js"></script>
+    <script src="assets/scripts/theme.min.js"></script>
 </body>
+
 </html>
